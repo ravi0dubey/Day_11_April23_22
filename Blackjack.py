@@ -1,5 +1,5 @@
 import random
-
+from replit import clear
 def generate_score():
   cards = [11,2,3,4,5,6,7,8,9,10,10,10,10]
   rand_number = random.choice(cards)
@@ -80,6 +80,7 @@ while  play_game != 'n':
     print(compare_score(your_score,computer_score))
     
     play_game = input("Do you want to play a game of BlackJack? type 'y' or 'n': ")
+    clear()
     your_hand = []
     computer_hand= []
 
