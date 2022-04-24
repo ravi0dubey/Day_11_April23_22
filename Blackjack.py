@@ -41,6 +41,7 @@ def compare_score(your_score, computer_score):
     return "Computer Win!!! "
 
 def cal_score(cards):
+ #BlackJack condition of getting Ace and 10
   if sum(cards) == 21 and len(cards) == 2:
     return 0
   if sum(cards) > 21 and 11 in cards:
