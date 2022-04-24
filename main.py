@@ -1,7 +1,11 @@
 import random
+cards = [11,2,3,4,5,6,7,8,9,10,10,10,10]
 
 def generate_score():
-  return random.randint(0,11)
+   rand_number = random.randint(0,12)
+   print(f"rand_number: {rand_number}")
+   return cards[rand_number]
+
 play_game = 'y'
 
 your_score=0
@@ -45,7 +49,7 @@ while  play_game != 'n':
   your_score = cal_your_score()
   computer_score= cal_computer_score()
   if your_score > 21:
-     print("Your score great than 21.You loose!Game Over!!!")
+     print("Your score greater than 21.You loose!Game Over!!!")
      break
   
   if computer_score > 21:
